@@ -1,11 +1,11 @@
-# LecturerDigest Landing Page
+# LectureDigest Landing Page
 
-Halaman web statis minimalis dan premium untuk mempromosikan aplikasi **LecturerDigest**, mendemonstrasikan fiturnya secara interaktif, dan menyediakan tautan langsung pengunduhan APK tanpa perlu login.
+Halaman web statis minimalis dan premium untuk mempromosikan aplikasi **LectureDigest**, mendemonstrasikan fiturnya secara interaktif, dan menyediakan tautan langsung pengunduhan APK tanpa perlu login.
 
 ## Struktur Folder
 
 ```
-lecturer_digest_landing/
+lecturedigest_landing/
 ├── index.html         # Halaman utama & interaktivitas
 ├── style.css          # Desain sistem & responsivitas
 ├── README.md          # Panduan ini
@@ -20,7 +20,7 @@ lecturer_digest_landing/
    ```
 2. Salin file APK hasil build tersebut ke dalam folder ini. File APK terletak di:
    `c:\laragon\www\lecturer_digest\build\app\outputs\flutter-apk\app-release.apk`
-3. Tempel file tersebut ke dalam folder `lecturer_digest_landing/` ini dan pastikan namanya tetap `app-release.apk`.
+3. Tempel file tersebut ke dalam folder `lecturedigest_landing/` ini dan pastikan namanya tetap `app-release.apk`.
 
 ## Uji Coba Lokal
 
@@ -34,7 +34,7 @@ Lalu buka `http://localhost:8000` di browser Anda.
 
 1. Masuk ke folder landing page ini di terminal Anda:
    ```bash
-   cd lecturer_digest_landing
+   cd lecturedigest_landing
    ```
 2. Inisialisasi Git baru di dalam folder ini (agar terpisah dari git utama):
    ```bash
@@ -42,11 +42,11 @@ Lalu buka `http://localhost:8000` di browser Anda.
    git add .
    git commit -m "Inisialisasi landing page rilis"
    ```
-3. Buat repositori baru di GitHub (misal bernama `lecturer-digest-landing`) secara **Public**, lalu hubungkan dan push kode Anda ke sana:
+3. Buat repositori baru di GitHub (misal bernama `lecturedigest-landing`) secara **Public**, lalu hubungkan dan push kode Anda ke sana:
    ```bash
-   git remote add origin https://github.com/username/lecturer-digest-landing.git
+   git remote add origin https://github.com/username/lecturedigest-landing.git
    git branch -M main
    git push -u origin main
    ```
-4. Buka [Vercel Dashboard](https://vercel.com/dashboard), buat proyek baru, lalu hubungkan dengan repositori `lecturer-digest-landing` yang baru saja Anda buat.
+4. Buka [Vercel Dashboard](https://vercel.com/dashboard), buat proyek baru, lalu hubungkan dengan repositori `lecturedigest-landing` yang baru saja Anda buat.
 5. Klik **Deploy**. Selesai! Aplikasi Anda beserta APK-nya sekarang online dan siap dinilai juri.
