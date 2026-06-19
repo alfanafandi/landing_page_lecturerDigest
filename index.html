@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LecturerDigest - Rangkum Kuliah Otomatis dengan AI</title>
+    <meta name="description" content="LecturerDigest adalah aplikasi Flutter cerdas yang membantu mahasiswa merangkum materi kuliah secara otomatis menggunakan AI. Rekam, buat transkrip, flashcard, dan kuis secara instan.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="LecturerDigest Logo" class="logo-img">
+                <span class="logo-text">Lecturer<span>Digest</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="#fitur">Fitur</a>
+                <a href="#alur">Alur Belajar</a>
+                <a href="#demo">Pratinjau</a>
+                <a href="#panduan">Cara Instalasi</a>
+            </nav>
+            <div class="nav-cta">
+                <a href="app-release.apk" class="btn btn-primary btn-sm" download>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    Unduh APK
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge">✨ Didukung oleh Kecerdasan Buatan (AI)</div>
+                <h1>Ubah Rekaman Kuliah Menjadi Ringkasan & Kuis Instan</h1>
+                <p class="hero-subtitle">Rekam kuliah Anda, biarkan AI merangkum materi secara otomatis, menghasilkan flashcard interaktif, dan kuis evaluasi dalam hitungan detik.</p>
+                
+                <div class="hero-actions">
+                    <a href="app-release.apk" class="btn btn-primary btn-lg" download>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                        Unduh APK Sekarang
+                    </a>
+                    <a href="#demo" class="btn btn-secondary btn-lg">
+                        Lihat Fitur Utama
+                    </a>
+                </div>
+                
+                <div class="hero-meta">
+                    <span>✓ Ukuran ~60 MB</span>
+                    <span>•</span>
+                    <span>✓ Khusus Android</span>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <!-- CSS App Mockup -->
+                <div class="phone-frame-wrapper">
+                    <div class="phone-frame">
+                        <img src="ss/dashboard.png" alt="LecturerDigest Dashboard" class="phone-screenshot">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="fitur" class="features-section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Fitur Unggulan Pembelajaran Cerdas</h2>
+                <p>Didesain khusus untuk membantu mahasiswa memahami materi kuliah dengan lebih cepat dan efektif.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg>
+                    </div>
+                    <h3>Perekaman & Transkripsi AI</h3>
+                    <p>Rekam penjelasan dosen secara langsung. AI akan mengubah rekaman audio kuliah Anda menjadi teks transkrip terstruktur secara instan.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </div>
+                    <h3>Ringkasan Otomatis</h3>
+                    <p>Dapatkan ringkasan materi kuliah berupa poin-poin penting, istilah kunci, dan rumus esensial secara terstruktur tanpa perlu mencatat manual.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="11" y2="17"/></svg>
+                    </div>
+                    <h3>Kartu Hafalan (Flashcards)</h3>
+                    <p>AI menghasilkan kartu tanya-jawab interaktif berdasarkan isi kuliah untuk melatih ingatan Anda menggunakan metode active recall.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <h3>Kuis Evaluasi Instan</h3>
+                    <p>Uji pemahaman Anda melalui kuis pilihan ganda yang dihasilkan otomatis oleh AI, lengkap dengan kunci jawaban dan analisis skor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UX Flow Section -->
+    <section id="alur" class="flow-section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Alur Belajar Cerdas (UX Flow)</h2>
+                <p>Bagaimana aplikasi LecturerDigest membantu Anda memahami materi kuliah dari awal hingga menguasainya.</p>
+            </div>
+            
+            <div class="flow-steps">
+                <div class="flow-step">
+                    <div class="flow-icon">🎙️</div>
+                    <div class="flow-content">
+                        <h4>1. Rekam Kuliah</h4>
+                        <p>Mulai perekaman saat kelas dimulai. AI mendeteksi penjelasan dosen dan menyusun transkrip teks.</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-icon">📝</div>
+                    <div class="flow-content">
+                        <h4>2. AI Rangkum</h4>
+                        <p>AI memproses rekaman kuliah menjadi ringkasan poin penting, glosarium istilah, dan intisari bab.</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-icon">💬</div>
+                    <div class="flow-content">
+                        <h4>3. Latih & Diskusi</h4>
+                        <p>Ingat materi lewat flashcard otomatis, atau tanyakan bagian yang sulit ke asisten chat DigestBot AI.</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-icon">🧠</div>
+                    <div class="flow-content">
+                        <h4>4. Diagnosis & Remedial</h4>
+                        <p>Uji pemahaman lewat kuis AI. Remedial Bot akan otomatis memulihkan kelemahan belajar Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Preview Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Pratinjau Antarmuka Aplikasi</h2>
+                <p>Eksplorasi pratinjau fitur utama aplikasi LecturerDigest di bawah ini untuk melihat bagaimana aplikasi bekerja.</p>
+            </div>
+            
+            <div class="demo-tabs-container">
+                <div class="demo-tabs">
+                    <button class="tab-btn active" onclick="switchTab('rekam')">🎙️ Perekaman AI</button>
+                    <button class="tab-btn" onclick="switchTab('ringkas')">📝 Ringkasan</button>
+                    <button class="tab-btn" onclick="switchTab('flash')">🎴 Flashcards & Kuis</button>
+                    <button class="tab-btn" onclick="switchTab('bot')">💬 DigestBot Chat</button>
+                    <button class="tab-btn" onclick="switchTab('pdf')">📄 Analisis PDF</button>
+                    <button class="tab-btn" onclick="switchTab('diagnosis')">🧠 Diagnosis & Remedial</button>
+                </div>
+                
+                <div class="demo-content-wrapper">
+                    <!-- Tab Panel 1: Rekam -->
+                    <div id="panel-rekam" class="tab-panel active">
+                        <div class="panel-layout">
+                            <div class="panel-info">
+                                <h3>Merekam Kuliah Secara Real-Time</h3>
+                                <p>Sistem merekam audio kuliah dengan jernih, mendeteksi suara dosen, dan mempersiapkan data untuk diproses oleh kecerdasan buatan.</p>
+                                <ul class="bullet-list">
+                                    <li>Perekaman audio berkualitas tinggi secara langsung.</li>
+                                    <li>Indikator status rekam yang informatif.</li>
+                                    <li>Penyimpanan otomatis langsung di database cloud Supabase.</li>
+                                </ul>
+                            </div>
+                            <div class="panel-preview">
+                                <div class="phone-frame mini-phone">
+                                    <img src="ss/rekam.png" alt="Perekaman AI LecturerDigest" class="phone-screenshot">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tab Panel 2: Ringkas -->
+                    <div id="panel-ringkas" class="tab-panel">
+                        <div class="panel-layout">
+                            <div class="panel-info">
+                                <h3>Ringkasan Otomatis Berbasis AI</h3>
+                                <p>Menghasilkan rangkuman berstruktur dari transkrip kuliah panjang. Menemukan poin-poin terpenting dalam hitungan detik.</p>
+                                <ul class="bullet-list">
+                                    <li>Pembuatan rangkuman otomatis berdasarkan materi kuliah.</li>
+                                    <li>Pengelompokan dalam sub-bab/topik yang rapi.</li>
+                                    <li>Ekstraksi poin-poin kunci materi secara detail.</li>
+                                </ul>
+                            </div>
+                            <div class="panel-preview">
+                                <div class="phone-frame mini-phone">
+                                    <img src="ss/ringkasan 1.png" alt="Ringkasan Otomatis LecturerDigest" class="phone-screenshot">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tab Panel 3: Flashcards -->
+                    <div id="panel-flash" class="tab-panel">
+                        <div class="panel-layout">
+                            <div class="panel-info">
+                                <h3>Belajar Cepat dengan Flashcard & Kuis</h3>
+                                <p>Sistem mengekstrak konsep kunci dan membuat kuis serta pertanyaan kartu hafalan otomatis untuk melatih daya ingat Anda.</p>
+                                <ul class="bullet-list">
+                                    <li>Metode Active Recall untuk mengingat materi kuliah.</li>
+                                    <li>Pembuatan kartu tanya-jawab otomatis dari teks ringkasan.</li>
+                                    <li>Kuis pilihan ganda untuk mengevaluasi pemahaman belajar.</li>
+                                </ul>
+                            </div>
+                            <div class="panel-preview">
+                                <div class="phone-frame mini-phone">
+                                    <img src="ss/flashcard1.png" alt="Flashcards LecturerDigest" class="phone-screenshot">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tab Panel 4: DigestBot -->
+                    <div id="panel-bot" class="tab-panel">
+                        <div class="panel-layout">
+                            <div class="panel-info">
+                                <h3>Asisten Belajar Cerdas: DigestBot</h3>
+                                <p>Fitur tanya jawab langsung dengan AI pintar yang mengetahui isi rekaman kuliah Anda secara detail.</p>
+                                <ul class="bullet-list">
+                                    <li>Tanya jawab interaktif seputar isi rekaman.</li>
+                                    <li>Minta penjelasan ulang pada bagian materi yang sulit.</li>
+                                    <li>Asisten AI pribadi yang selalu siap membantu kapan saja.</li>
+                                </ul>
+                            </div>
+                            <div class="panel-preview">
+                                <div class="phone-frame mini-phone">
+                                    <img src="ss/digestbot1.png" alt="DigestBot Chat AI LecturerDigest" class="phone-screenshot">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tab Panel 5: Analisis PDF -->
+                    <div id="panel-pdf" class="tab-panel">
+                        <div class="panel-layout">
+                            <div class="panel-info">
+                                <h3>Unggah & Analisis PDF</h3>
+                                <p>Membaca dan merangkum slide kuliah/PDF bahan ajar Anda langsung di dalam aplikasi.</p>
+                                <ul class="bullet-list">
+                                    <li>Unggah file bahan kuliah berupa slide presentasi atau dokumen PDF.</li>
+                                    <li>AI akan mengekstrak informasi dan membuat materi ringkasan.</li>
+                                    <li>Bahan ajar terpusat untuk memudahkan belajar terarah.</li>
+                                </ul>
+                            </div>
+                            <div class="panel-preview">
+                                <div class="phone-frame mini-phone">
+                                    <img src="ss/pdf1.png" alt="Analisis PDF LecturerDigest" class="phone-screenshot">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tab Panel 6: Diagnosis -->
+                    <div id="panel-diagnosis" class="tab-panel">
+                        <div class="panel-layout">
+                            <div class="panel-info">
+                                <h3>Diagnosis Pemahaman & Remedial Bot</h3>
+                                <p>Mendiagnosis kelemahan belajar Anda dan memberikan bantuan remedial otomatis.</p>
+                                <ul class="bullet-list">
+                                    <li>Analisis otomatis tingkat pemahaman per topik kuliah.</li>
+                                    <li>Remedial Bot memberikan materi remedial terarah.</li>
+                                    <li>Rekomendasi materi yang perlu dipelajari kembali agar nilai maksimal.</li>
+                                </ul>
+                            </div>
+                            <div class="panel-preview">
+                                <div class="phone-frame mini-phone">
+                                    <img src="ss/diagnosis1.png" alt="Diagnosis Pemahaman LecturerDigest" class="phone-screenshot">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Guide Section -->
+    <section id="panduan" class="guide-section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Langkah Mudah Penginstalan APK</h2>
+                <p>Ikuti langkah-langkah di bawah ini untuk memasang aplikasi LecturerDigest di perangkat Android Anda.</p>
+            </div>
+            
+            <div class="guide-steps">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <h4>Unduh File APK</h4>
+                    <p>Klik tombol unduh di bagian atas atau bawah halaman ini untuk mengunduh file <code>app-release.apk</code>.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <h4>Izinkan Instalasi</h4>
+                    <p>Buka file APK yang diunduh. Jika muncul peringatan, masuk ke <strong>Pengaturan</strong> lalu izinkan penginstalan dari browser atau file manager.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <h4>Pasang & Jalankan</h4>
+                    <p>Klik <strong>Pasang (Install)</strong> dan tunggu proses selesai. Buka aplikasi, dan Anda siap menggunakannya!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2>Mulai Transformasi Belajar Anda</h2>
+            <p>Jadikan proses mencatat materi kuliah lebih mudah, cepat, dan teratur dengan LecturerDigest.</p>
+            <div class="cta-btn-wrapper">
+                <a href="app-release.apk" class="btn btn-primary btn-lg" download>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    Unduh Aplikasi (.apk)
+                </a>
+            </div>
+            <p class="cta-note">*Khusus sistem operasi Android</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">© 2026 LecturerDigest. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive JS Scripts -->
+    <script>
+        // Tab switching logic
+        function switchTab(tabId) {
+            // Remove active classes
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+            
+            // Add active to current button
+            event.currentTarget.classList.add('active');
+            
+            // Show corresponding panel
+            document.getElementById('panel-' + tabId).classList.add('active');
+        }
+
+        // No extra functions needed since screenshots are used directly.
+    </script>
+</body>
+</html>
