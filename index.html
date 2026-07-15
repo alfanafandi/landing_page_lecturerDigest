@@ -32,10 +32,12 @@
                 <a href="#demo">Pratinjau</a>
                 <a href="#panduan">Cara Instalasi</a>
             </nav>
-            <div class="nav-cta">
+            <div class="nav-cta" style="display: flex; gap: 8px;">
                 <a href="https://docs.google.com/file/d/1D8ZPhTMsYRMpi4HwBgtLhSe80zKdsb2G/view?usp=sharing" class="btn btn-primary btn-sm" target="_blank">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
                     Unduh APK
+                </a>
+                <a href="https://docs.google.com/file/d/1uMV6IIDW2Dy5zKRCj3B8Sr2jO7gBpQwp/view?usp=sharing" class="btn btn-secondary btn-sm" target="_blank" style="background-color: var(--color-bg-card);">
+                    Unduh EXE
                 </a>
             </div>
         </div>
@@ -49,20 +51,21 @@
                 <h1>Ubah Rekaman Kuliah Menjadi Ringkasan & Kuis Instan</h1>
                 <p class="hero-subtitle">Rekam kuliah Anda, biarkan AI merangkum materi secara otomatis, menghasilkan flashcard interaktif, dan kuis evaluasi dalam hitungan detik.</p>
                 
-                <div class="hero-actions">
+                <div class="hero-actions" style="display: flex; gap: 16px; flex-wrap: wrap;">
                     <a href="https://docs.google.com/file/d/1D8ZPhTMsYRMpi4HwBgtLhSe80zKdsb2G/view?usp=sharing" class="btn btn-primary btn-lg" target="_blank">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-                        Unduh APK Sekarang
+                        Unduh APK (Android)
                     </a>
-                    <a href="#demo" class="btn btn-secondary btn-lg">
-                        Lihat Fitur Utama
+                    <a href="https://docs.google.com/file/d/1uMV6IIDW2Dy5zKRCj3B8Sr2jO7gBpQwp/view?usp=sharing" class="btn btn-secondary btn-lg" target="_blank" style="background-color: var(--color-bg-card);">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2" ry="2"/><path d="M12 18v-6M9 15l3 3 3-3"/></svg>
+                        Unduh EXE (Windows)
                     </a>
                 </div>
                 
                 <div class="hero-meta">
-                    <span>✓ Ukuran ~60 MB</span>
+                    <span>✓ Android (APK) & Windows (EXE)</span>
                     <span>•</span>
-                    <span>✓ Khusus Android</span>
+                    <span>✓ Didukung AI Lintas Platform</span>
                 </div>
             </div>
             
@@ -318,27 +321,58 @@
     <section id="panduan" class="guide-section">
         <div class="container">
             <div class="section-title text-center">
-                <h2>Langkah Mudah Penginstalan APK</h2>
-                <p>Ikuti langkah-langkah di bawah ini untuk memasang aplikasi LectureDigest di perangkat Android Anda.</p>
+                <h2>Cara Instalasi Aplikasi</h2>
+                <p>Pilih platform perangkat Anda untuk melihat panduan instalasi aplikasi LectureDigest.</p>
+            </div>
+
+            <div class="install-tabs" style="display: flex; justify-content: center; gap: 16px; margin-bottom: 40px;">
+                <button class="tab-btn active" id="btn-inst-android" onclick="switchInstallTab('android')">🤖 Android (APK)</button>
+                <button class="tab-btn" id="btn-inst-windows" onclick="switchInstallTab('windows')">💻 Windows (EXE)</button>
             </div>
             
-            <div class="guide-steps">
-                <div class="step-card">
-                    <div class="step-num">1</div>
-                    <h4>Unduh File APK</h4>
-                    <p>Klik tombol unduh di bagian atas atau bawah halaman ini untuk mengunduh file <code>app-release.apk</code>.</p>
+            <!-- Android Guide -->
+            <div id="inst-android" class="install-panel">
+                <div class="guide-steps">
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h4>Unduh File APK</h4>
+                        <p>Klik tombol unduh untuk mengunduh file <code>app-release.apk</code> (~60 MB).</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h4>Izinkan Instalasi</h4>
+                        <p>Buka file APK. Jika muncul peringatan, masuk ke <strong>Pengaturan</strong> dan aktifkan <strong>Izinkan instalasi dari sumber tidak dikenal</strong>.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-num">3</div>
+                        <h4>Pasang & Jalankan</h4>
+                        <p>Ketuk <strong>Pasang (Install)</strong> dan tunggu proses selesai. Buka aplikasi dan mulai belajar!</p>
+                    </div>
                 </div>
-                
-                <div class="step-card">
-                    <div class="step-num">2</div>
-                    <h4>Izinkan Instalasi</h4>
-                    <p>Buka file APK yang diunduh. Jika muncul peringatan, masuk ke <strong>Pengaturan</strong> lalu izinkan penginstalan dari browser atau file manager.</p>
-                </div>
-                
-                <div class="step-card">
-                    <div class="step-num">3</div>
-                    <h4>Pasang & Jalankan</h4>
-                    <p>Klik <strong>Pasang (Install)</strong> dan tunggu proses selesai. Buka aplikasi, dan Anda siap menggunakannya!</p>
+            </div>
+
+            <!-- Windows Guide -->
+            <div id="inst-windows" class="install-panel" style="display: none;">
+                <div class="guide-steps">
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h4>Unduh Folder Rilis ZIP</h4>
+                        <p>Klik tombol unduh untuk mendapatkan file kompresi ZIP (misalnya <code>Release.zip</code>) dari Google Drive.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h4>Ekstrak File ZIP</h4>
+                        <p>Setelah selesai diunduh, klik kanan pada file ZIP tersebut dan pilih <strong>Extract All...</strong> (Ekstrak Semua) ke folder pilihan Anda.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-num">3</div>
+                        <h4>Jalankan Aplikasi</h4>
+                        <p>Buka folder hasil ekstrak, cari file <strong><code>lecturer_digest.exe</code></strong>, lalu klik dua kali untuk menjalankan aplikasi!</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -349,13 +383,17 @@
         <div class="container text-center">
             <h2>Mulai Transformasi Belajar Anda</h2>
             <p>Jadikan proses mencatat materi kuliah lebih mudah, cepat, dan teratur dengan LectureDigest.</p>
-            <div class="cta-btn-wrapper">
+            <div class="cta-btn-wrapper" style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
                 <a href="https://docs.google.com/file/d/1D8ZPhTMsYRMpi4HwBgtLhSe80zKdsb2G/view?usp=sharing" class="btn btn-primary btn-lg" target="_blank">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-                    Unduh Aplikasi (.apk)
+                    Unduh APK (Android)
+                </a>
+                <a href="https://docs.google.com/file/d/1uMV6IIDW2Dy5zKRCj3B8Sr2jO7gBpQwp/view?usp=sharing" class="btn btn-secondary btn-lg" target="_blank" style="background-color: var(--color-bg-card);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2" ry="2"/><path d="M12 18v-6M9 15l3 3 3-3"/></svg>
+                    Unduh EXE (Windows)
                 </a>
             </div>
-            <p class="cta-note">*Khusus sistem operasi Android</p>
+            <p class="cta-note">*Tersedia untuk sistem operasi Android & Windows</p>
         </div>
     </section>
 
@@ -381,7 +419,22 @@
             document.getElementById('panel-' + tabId).classList.add('active');
         }
 
-        // No extra functions needed since screenshots are used directly.
+        // Installation Guide switcher
+        function switchInstallTab(platform) {
+            document.getElementById('btn-inst-android').classList.remove('active');
+            document.getElementById('btn-inst-windows').classList.remove('active');
+            
+            document.getElementById('inst-android').style.display = 'none';
+            document.getElementById('inst-windows').style.display = 'none';
+            
+            if (platform === 'android') {
+                document.getElementById('btn-inst-android').classList.add('active');
+                document.getElementById('inst-android').style.display = 'block';
+            } else {
+                document.getElementById('btn-inst-windows').classList.add('active');
+                document.getElementById('inst-windows').style.display = 'block';
+            }
+        }
     </script>
 </body>
 </html>
